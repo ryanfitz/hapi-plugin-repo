@@ -12,7 +12,10 @@ var log = bunyan.createLogger({
 
 server.connection({ port: 8080 });
 
-server.register(plugin, function () {
+server.register(plugin, function (err) {
+  if(err) {
+    log.error({err : err}, 'Failed to load plugins');
+  }
 });
 
 server.start(function (err) {
