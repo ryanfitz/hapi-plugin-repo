@@ -18,7 +18,7 @@
     "hoek": "2.x.x",
     "joi": "5.x.x",
     "lodash": "3.x.x",
-    "vogels": "2.0.0-rc6"
+    "vogels": "2.0.0-rc8"
   },
   "peerDependencies": {
     "hapi": ">=8.x.x"
